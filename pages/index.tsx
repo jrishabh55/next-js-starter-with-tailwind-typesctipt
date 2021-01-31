@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import { FC } from 'react';
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <div className="bg-red-900 h-screen">
       <Head>
@@ -9,4 +10,6 @@ export default function Home() {
       </Head>
     </div>
   );
-}
+};
+
+export default Home;
