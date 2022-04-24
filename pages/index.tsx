@@ -3,7 +3,7 @@ import { FC } from 'react';
 
 const Home: FC = () => {
   return (
-    <div className="bg-red-900 h-screen">
+    <div className="bg-red-50 h-screen">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
