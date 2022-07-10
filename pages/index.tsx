@@ -3,10 +3,10 @@ import { FC } from 'react';
 
 const Home: FC = () => {
   return (
-    <div className="bg-red-50 h-screen">
+    <div className="h-screen bg-red-50">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Codeation.io next-js template</title>
+        <link href="/favicon.ico" rel="icon" />
       </Head>
     </div>
   );
