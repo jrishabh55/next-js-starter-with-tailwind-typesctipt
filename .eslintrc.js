@@ -2,7 +2,7 @@ module.exports = {
   env: {
     amd: true,
     browser: true,
-    node: true
+    node: true,
   },
   extends: [
     'eslint:recommended',
@@ -11,17 +11,17 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier',
-    'plugin:prettier/recommended' // Make sure this is always the last element in the array.
+    'plugin:prettier/recommended', // Make sure this is always the last element in the array.
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2020,
-    sourceType: 'module'
+    sourceType: 'module',
   },
-  plugins: ['simple-import-sort', 'sort-destructure-keys'],
+  plugins: ['simple-import-sort', 'sort-destructure-keys', 'prettier'],
   root: true,
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -30,8 +30,8 @@ module.exports = {
       {
         aspects: ['invalidHref', 'preferButton'],
         components: ['Link'],
-        specialLink: ['hrefLeft', 'hrefRight']
-      }
+        specialLink: ['hrefLeft', 'hrefRight'],
+      },
     ],
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'react/jsx-sort-props': [
@@ -42,19 +42,19 @@ module.exports = {
         noSortAlphabetically: false,
         reservedFirst: true,
         shorthandFirst: true,
-        shorthandLast: false
-      }
+        shorthandLast: false,
+      },
     ],
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
     'sort-destructure-keys/sort-destructure-keys': 2,
-    'sort-keys': ['error', 'asc', { caseSensitive: true, minKeys: 2, natural: false }]
+    'sort-keys': ['error', 'asc', { caseSensitive: true, minKeys: 2, natural: false }],
   },
   settings: {
     react: {
-      version: 'detect'
-    }
-  }
+      version: 'detect',
+    },
+  },
 };
