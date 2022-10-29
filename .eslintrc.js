@@ -11,6 +11,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:@next/next/recommended',
     'prettier',
     'plugin:prettier/recommended', // Make sure this is always the last element in the array.
   ],
